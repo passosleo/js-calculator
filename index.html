@@ -10,46 +10,42 @@
   <title>JS Calculator</title>
 </head>
 <body>
-  <section>
-    <div class="container">
-      <div class="calculator">
-        <div class="display">
-          <input type="text" id="display" value="0" readonly>
-        </div>
-        <div class="keyboard">
-          <div class="row">
-            <button class="key" id="clear">AC</button>
-            <button class="key" id="sign">+/-</button>
-            <button class="key" id="percent">%</button>
-            <button class="key" id="divide">/</button>
-          </div>
-          <div class="row">
-            <button class="key" id="seven">7</button>
-            <button class="key" id="eight">8</button>
-            <button class="key" id="nine">9</button>
-            <button class="key" id="multiply">x</button>
-          </div>
-          <div class="row">
-            <button class="key" id="four">4</button>
-            <button class="key" id="five">5</button>
-            <button class="key" id="six">6</button>
-            <button class="key" id="subtract">-</button>
-          </div>
-          <div class="row">
-            <button class="key" id="one">1</button>
-            <button class="key" id="two">2</button>
-            <button class="key" id="three">3</button>
-            <button class="key" id="add">+</button>
-          </div>
-          <div class="row">
-            <button class="key" id="zero">0</button>
-            <button class="key" id="dot">.</button>
-            <button class="key" id="equals">=</button>
-          </div>
-        </div>
+  <div class="calculator">
+    <div class="display">
+      <input type="text" id="display" value="0" readonly>
+    </div>
+    <div class="keyboard">
+      <div class="row">
+        <button class="key" id="sign">+/-</button>
+        <button class="key" id="percent">%</button>
+        <button class="key" id="divide">/</button>
+        <button class="key" id="multiply">x</button>
+      </div>
+      <div class="row">
+        <button class="key" id="seven">7</button>
+        <button class="key" id="eight">8</button>
+        <button class="key" id="nine">9</button>
+        <button class="key" id="subtract">-</button>
+      </div>
+      <div class="row">
+        <button class="key" id="four">4</button>
+        <button class="key" id="five">5</button>
+        <button class="key" id="six">6</button>
+        <button class="key" id="add">+</button>
+      </div>
+      <div class="row">
+        <button class="key" id="one">1</button>
+        <button class="key" id="two">2</button>
+        <button class="key" id="three">3</button>
+        <button class="key" id="equals">=</button>
+      </div>
+      <div class="row">
+        <button class="key" id="clear">C</button>
+        <button class="key" id="zero">0</button>
+        <button class="key" id="dot">.</button>
       </div>
     </div>
-  </section>
+  </div>
 <script>
   const display = document.getElementById('display');
   const buttons = document.querySelectorAll('.key');
@@ -88,7 +84,7 @@
         }
       }
       // Clear
-      if (key === 'AC') {
+      if (key === 'C') {
         display.value = '0';
         isOperator = false;
         isDot = false;

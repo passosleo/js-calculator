@@ -1,4 +1,74 @@
+@font-face {
+  font-family: 'Digital';
+  src: url('digital.woff') format('woff'),
+   url('digital.ttf') format('truetype');
+}  
+
 body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #191919;
-  color: #FF8D29
+}
+
+button {
+  color: #F5F5F5;
+}
+
+.calculator {
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #2B2B2B;
+  box-shadow: rgba(0, 0, 0, 0.4) 8px 8px;
+}
+
+#display {
+  max-width: 235px;
+  background-color: #A8C64E;
+  color: #3C412C;
+  padding: 0 8px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 3rem;
+  font-family: 'Digital';
+}
+
+#display:focus {
+  outline: none;
+}
+
+.row {
+  margin-top: 4px;
+}
+
+.key {
+  width: 60px;
+  height: 60px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #424642;
+  box-shadow: rgba(0, 0, 0, 0.4) 2px 2px;
+  transition: 150ms;
+  cursor: pointer;
+}
+
+.key:active {
+  opacity: 0.5;
+  box-shadow: none;
+  transition: 150ms;
+}
+
+#clear {
+  background-color: #B22727;
+}
+
+#equals {
+  position: absolute;
+  height: 124px;
+  margin-left: 4px;
+  background-color: #FF8D29;
 }
