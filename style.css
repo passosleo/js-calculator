@@ -28,12 +28,13 @@ button {
   max-width: 235px;
   background-color: #A8C64E;
   color: #3C412C;
-  padding: 0 8px;
+  padding: 0 12px;
   margin: 12px 0;
   border-radius: 10px;
   border: none;
   font-size: 3rem;
   font-family: 'Digital';
+  box-shadow: inset rgba(0, 0, 0, 0.4) 2px 2px 2px 1px;
 }
 
 #display:focus {
