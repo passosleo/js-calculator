@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Digital';
-  src: url('digital.woff') format('woff'),
-   url('digital.ttf') format('truetype');
+  src: url('../fonts/digital.woff') format('woff'),
+   url('../fonts/digital.ttf') format('truetype');
 }  
 
 body {
